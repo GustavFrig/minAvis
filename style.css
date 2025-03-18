@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,17 +10,24 @@
 header {
     background-color: #333;
     color: white;
-    padding: 15px 20px;
+    padding: 0px 20px;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 20px;
-    }
+.logo{
+    background-color: #6DD3CE;
+    height: 60px;
+    width: 100px;
+}
+
+.logo img {
+    margin-top: 20px;
+    width: 75px;
+    height: 20px;
+    margin-left: 15px;
+}
 
 nav ul li {
     display: inline-block;
@@ -39,4 +46,3 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc;
 }
-
