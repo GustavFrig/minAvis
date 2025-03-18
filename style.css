@@ -67,8 +67,6 @@ nav ul li a:hover {
 .search-bar {
     display: flex;
     align-items: center;
-    background: white;
-    border-radius: 30px;
     margin-left: auto;
     height: 40px;
 }
@@ -79,11 +77,13 @@ nav ul li a:hover {
     padding: 10px 15px;
     width: 250px;
     font-size: 16px;
+    height: 40px;
     border-radius: 30px 0 0 30px;
 }
 
 .search-bar button {
     background: #6DD3CE;
+    height: 40px;
     border: none;
     padding: 10px 15px;
     border-radius: 0 30px 30px 0;
