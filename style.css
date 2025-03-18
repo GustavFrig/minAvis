@@ -20,16 +20,23 @@
 header {
     background-color: #333;
     color: white;
-    padding: 15px 20px;
+    padding: 0px 20px;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 20px;
+.logo{
+    background-color: #6DD3CE;
+    height: 60px;
+    width: 100px;
+}
+
+.logo img {
+    margin-top: 20px;
+    width: 75px;
+    height: 20px;
+    margin-left: 15px;
 }
 
 nav ul li {
@@ -48,4 +55,24 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ccc;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3px;
+    max-width: 900px;
+}
+article{
+    background-color: bisque;
+    grid-column: span 3;
+    min-height: 150px;
+    border: 1px solid black;
+}
+
+article.large{
+    grid-column: span 6;
+}
+article.xlarge{
+    grid-column: span 12;
 }
