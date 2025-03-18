@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --base-color: white;
+    --base-variant: #e8e98e;
+    --text-color: black; 
+    --secondary-text: #232738;
+    --primary-color: #3a453d; 
+    --accent-color: #0071ff; 
+
 }
 
 header {
@@ -20,7 +30,7 @@ header .logo {
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 20px;
-    }
+}
 
 nav ul li {
     display: inline-block;
@@ -39,4 +49,3 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc;
 }
-
