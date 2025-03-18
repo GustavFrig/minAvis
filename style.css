@@ -21,6 +21,15 @@ img{
 
 }
 
+.darkmode {
+    --base-color: black;
+    --base-variant: #101425;
+    --text-color: white; 
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a453d; 
+    --accent-color: #0071ff; 
+}
+
 header {
     background-color: #333;
     color: white;
