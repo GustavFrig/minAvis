@@ -21,10 +21,17 @@
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">KI</a></li>
-                <li><a href="#">Mer</a></li>
+                <li><a href="#">Mer</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
             </ul>
             
         </nav>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
     </header>
     <main>
         <h1>Velkommen til min avis</h1>

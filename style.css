@@ -48,6 +48,13 @@ header {
     margin-left: 15px;
 }
 
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 nav ul li {
     display: inline-block;
     margin-left: 20px;
@@ -65,6 +72,41 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc;
 }
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    margin-left: auto;
+    height: 40px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-bar button {
+    background: #6DD3CE;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 30px 30px 0;
+}
+
+.search-bar button:hover {
+    background: #ccc;
+}
+
+.search-bar button i {
+    color: white;
+    font-size: 16px;
+}
+
 
 .container{
     display: grid;
