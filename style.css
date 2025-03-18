@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+}
+
 :root {
     --base-color: white;
     --base-variant: #e8e98e;
