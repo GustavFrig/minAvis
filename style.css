@@ -48,7 +48,7 @@ nav ul{
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 40px;
     padding-left: 40px;
 }
 
@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 .search-bar button {
-    background: #6DD3CE;
+    background: white;
     height: 40px;
     border: none;
     padding: 10px 15px;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 .search-bar button i {
-    color: white;
+    color: #333;
     font-size: 16px;
 }
 
