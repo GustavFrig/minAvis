@@ -1,121 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
-}
-
-:root {
-    --base-color: white;
-    --base-variant: #e8e98e;
-    --text-color: black; 
-    --secondary-text: #232738;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
-
-}
-
-.darkmode {
-    --base-color: black;
-    --base-variant: #101425;
-    --text-color: white; 
-    --secondary-text: #a4a5b8;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
-}
-
-header {
-    background-color: #333;
-    color: white;
-    
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    background-color: #6DD3CE;
-    height: 100px;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px; /* Litt padding for å unngå at bildet klemmes mot kantene */
-}
-
-h1{
-    text-align: center;
-    margin: 20px;
-}
-
-.logo img {
-    height: 80%; /* Sørger for at bildet ikke fyller hele boksen */
-   width: 100%;
-    object-fit: contain;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-nav ul li {
-    margin-top: 20px;
-    display: inline-block;
-    margin-left: 40px;
-    padding-left: 40px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    color: #ccc;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    height: 40px;
-}
-
-.search-bar input {
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    width: 250px;
-    font-size: 16px;
-    height: 40px;
-    border-radius: 30px 0 0 30px;
-}
-
-.search-bar button {
-    background: white;
-    height: 40px;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 0 30px 30px 0;
-}
-
-.search-bar button:hover {
-    background: #ccc;
-}
-
-.search-bar button i {
-    color: #333;
-    font-size: 16px;
 }

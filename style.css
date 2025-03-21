@@ -7,17 +7,21 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(227, 192, 192);
+}
+
 img {
     width: 100%;
 }
 
 :root {
-    --base-color: white;
-    --base-variant: #e8e98e;
-    --text-color: black;
-    --secondary-text: #232738;
-    --primary-color: #3a453d;
-    --accent-color: #0071ff;
+    --base-color: #FFFFFF;
+    --base-variant: #B7BFC2;
+    --text-color: #252627;
+    --secondary-text: #4A5256;
+    --primary-color: #DE3C4B; 
+    --accent-color: #DC4F5F; 
 
 }
 
@@ -31,8 +35,8 @@ img {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--base-color);
     height: 60px;
     display: flex;
     align-items: center;
@@ -105,7 +109,7 @@ nav ul li a:hover {
 }
 
 .search-bar button {
-    background: white;
+    background: var(--base-color);
     height: 40px;
     border: none;
     padding: 10px 15px;
@@ -117,7 +121,7 @@ nav ul li a:hover {
 }
 
 .search-bar button i {
-    color: #333;
+    color: var(--text-color);
     font-size: 16px;
 }
 
@@ -133,7 +137,7 @@ nav ul li a:hover {
 }
 
 article {
-    background-color: bisque;
+    background-color: var(--base-color);
     grid-column: span 3;
     min-height: 150px;
     border: 1px solid black;
@@ -183,4 +187,11 @@ article.xlarge {
 
 .dropdown-menu.active {
     display: block;
+}
+.xlarge {
+    
+}
+
+.xlarge > h1 {
+    font-size: 50px;
 }
