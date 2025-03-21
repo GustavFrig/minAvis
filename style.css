@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,68 +7,73 @@
     box-sizing: border-box;
 }
 
-img{
+body{
+    background-color: var(--base-variant);
+}
+
+img {
     width: 100%;
 }
 
 :root {
-    --base-color: white;
-    --base-variant: #e8e98e;
-    --text-color: black; 
-    --secondary-text: #232738;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
+    --base-color: #FFFFFF;
+    --base-variant: #B7BFC2;
+    --text-color: #252627;
+    --secondary-text: #4A5256;
+    --primary-color: #DE3C4B; 
+    --accent-color: #DC4F5F; 
 
 }
 
 .darkmode {
     --base-color: black;
     --base-variant: #101425;
-    --text-color: white; 
+    --text-color: white;
     --secondary-text: #a4a5b8;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
+    --primary-color: #3a453d;
+    --accent-color: #0071ff;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    
+    background-color: var(--text-color);
+    color: var(--base-color);
     height: 60px;
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 .logo {
-    background-color: #6DD3CE;
-    height: 100px;
-    width: 40%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px; /* Litt padding for å unngå at bildet klemmes mot kantene */
 }
 
-h1{
+h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
     text-align: center;
     margin: 20px;
 }
 
 .logo img {
-    height: 80%; /* Sørger for at bildet ikke fyller hele boksen */
-   width: 100%;
+    height: 60px;
+    width: 100%;
     object-fit: contain;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
 nav ul li {
-    margin-top: 20px;
     display: inline-block;
     margin-left: 40px;
     padding-left: 40px;
@@ -104,7 +109,7 @@ nav ul li a:hover {
 }
 
 .search-bar button {
-    background: white;
+    background: var(--base-color);
     height: 40px;
     border: none;
     padding: 10px 15px;
@@ -116,30 +121,77 @@ nav ul li a:hover {
 }
 
 .search-bar button i {
-    color: #333;
+    color: var(--text-color);
     font-size: 16px;
 }
 
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3px;
+    gap: 20px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 
 }
-article{
-    background-color: bisque;
+
+article {
+    background-color: var(--base-color);
     grid-column: span 3;
     min-height: 150px;
     border: 1px solid black;
 }
 
-article.large{
+article.large {
     grid-column: span 6;
 }
-article.xlarge{
+
+article.xlarge {
     grid-column: span 12;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropdown-menu li a:hover {
+    color: #ccc;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+.xlarge {
+    
+}
+
+.xlarge > h1 {
+    font-size: 50px;
 }
