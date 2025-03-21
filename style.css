@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(227, 192, 192);
 }
 
@@ -20,8 +20,8 @@ img {
     --base-variant: #B7BFC2;
     --text-color: #252627;
     --secondary-text: #4A5256;
-    --primary-color: #DE3C4B; 
-    --accent-color: #DC4F5F; 
+    --primary-color: #DE3C4B;
+    --accent-color: #DC4F5F;
 
 }
 
@@ -60,7 +60,7 @@ h1 {
 }
 
 .logo img {
-    height: 60px; 
+    height: 60px;
     width: 100%;
     object-fit: contain;
 }
@@ -188,10 +188,32 @@ article.xlarge {
 .dropdown-menu.active {
     display: block;
 }
-.xlarge {
-    
+
+.xlarge {}
+
+.xlarge>h1 {
+    font-size: 50px;
 }
 
-.xlarge > h1 {
-    font-size: 50px;
+
+.video {
+    height: 500px;
+    background-color: #0071ff;
+    margin-top: 100px;
+    flex: 0 0 30%;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.korte-vids {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    background: white;
 }
