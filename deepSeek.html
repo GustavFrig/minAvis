@@ -9,8 +9,30 @@
 </head>
 <body>
     <header>
-        <h1>Deep Seek: Revolusjon innen KI-teknologi</h1>
+        <div class="logo">
+            <img src="avis_bilder/logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">KI</a></li>
+                <li class="dropdown">
+                    <a href="#" id="dropdown-toggle">Mer</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+            </ul>
+
+        </nav>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
     </header>
+    <div class="overskrift">
+        <h1>Deep Seek: Revolusjon innen KI-teknologi</h1>
+    </div>
 
     <main class="content">
         <article class="text-column">
@@ -23,6 +45,18 @@
             <h2>Hva betyr dette for fremtiden?</h2>
             <p>Med denne teknologien kan vi forvente store endringer innen informasjonsinnhenting...</p>
         </article>
+
+        <aside class="info-column">
+            <img src="https://framerusercontent.com/images/rVq7ufdPCjF3cCeF4V3lFaDIF8.png" alt="DeepSeek illustrasjon">
+            <div class="info-box">
+                <h3>DeepSeek vs Google</h3>
+                <ul>
+                    <p>✔ Forstår naturlig språk bedre</p>
+                    <p>✔ Gir sammenhengende svar</p>
+                    <p>✔ Fokuserer på AI-generert innhold</p>
+                </ul>
+            </div>
+        </aside>
     </main>
 </body>
 </html>
