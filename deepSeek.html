@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Seek</title>
+    <link rel="stylesheet" href="styleDS.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="avis_bilder/AVIS_logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">KI</a></li>
+                <li><a href="#">Mer</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+            </ul>
+            
+            <button id="theme-switch"></button>
+
+        </nav>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+</body>
+</html>
