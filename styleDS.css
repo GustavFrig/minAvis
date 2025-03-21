@@ -14,6 +14,7 @@ img {
 :root {
     --base-color: #FFFFFF;
     --base-variant: #B7BFC2;
+    --background: #393a3b;
     --text-color: #252627;
     --secondary-text: #4A5256;
     --primary-color: #DE3C4B; 
@@ -22,7 +23,7 @@ img {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--background);
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -30,12 +31,13 @@ body {
 }
 
 .overskrift {
-    background: var(--card-bg);
     padding: 20px;
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-    border-bottom: 2px solid var(--border-color);
+}
+h1{
+    color: var(--primary-color);
 }
 
 .content {
@@ -49,14 +51,14 @@ body {
 .text-column {
     flex: 2;
     padding: 20px;
-    background: var(--card-bg);
+    background: var(--base-variant);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .info-column {
     flex: 1;
-    background: var(--card-bg);
+    background: var(--base-variant);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
