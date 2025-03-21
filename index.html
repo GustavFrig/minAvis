@@ -21,15 +21,26 @@
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">KI</a></li>
-                <li><a href="#">Mer</a></li>
+                <li><a href="#">Mer</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
             </ul>
+            
+            <button id="theme-switch"></button>
+
         </nav>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
     </header>
     <main>
         <h1>The grand algorithm</h1>
         <div class="container">
-            <article>
+            <article onclick="window.location.href='deepSeek.html';" style="cursor: pointer;">
                 Artikkel 1
+                <img src="https://framerusercontent.com/images/rVq7ufdPCjF3cCeF4V3lFaDIF8.png" alt="bilde_deepSeek">
             </article>
             <article class="large">
                 Artikkel 2
@@ -38,7 +49,7 @@
 
             </article>
             <article class="xlarge">
-
+                Artikkel 3
             </article>
         </div>
     </main>
