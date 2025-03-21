@@ -33,16 +33,17 @@ img {
 header {
     background-color: #333;
     color: white;
-    padding: 0px 20px;
     height: 60px;
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 .logo {
-    background-color: #6DD3CE;
     height: 60px;
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -55,16 +56,16 @@ h1 {
 }
 
 .logo img {
-    margin-top: 20px;
-    width: 75px;
-    height: 20px;
-    margin-left: 15px;
+    height: 60px; 
+    width: 100%;
+    object-fit: contain;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
