@@ -7,9 +7,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(227, 192, 192);
-}
 
 img {
     width: 100%;
@@ -47,7 +44,7 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-conten  t: center;
+    justify-content: center;
 }
 
 h1 {
@@ -60,7 +57,7 @@ h1 {
 }
 
 .logo img {
-    height: 60px; 
+    height: 60px;
     width: 100%;
     object-fit: contain;
 }
