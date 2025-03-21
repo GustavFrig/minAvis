@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,27 +7,27 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
 }
 
 :root {
     --base-color: white;
     --base-variant: #e8e98e;
-    --text-color: black; 
+    --text-color: black;
     --secondary-text: #232738;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
+    --primary-color: #3a453d;
+    --accent-color: #0071ff;
 
 }
 
 .darkmode {
     --base-color: black;
     --base-variant: #101425;
-    --text-color: white; 
+    --text-color: white;
     --secondary-text: #a4a5b8;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
+    --primary-color: #3a453d;
+    --accent-color: #0071ff;
 }
 
 header {
@@ -39,13 +39,17 @@ header {
     align-items: center;
 }
 
-.logo{
+.logo {
     background-color: #6DD3CE;
     height: 60px;
     width: 100px;
 }
 
-h1{
+h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
     text-align: center;
     margin: 20px;
 }
@@ -57,7 +61,7 @@ h1{
     margin-left: 15px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -118,25 +122,27 @@ nav ul li a:hover {
 }
 
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3px;
+    gap: 20px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 
 }
-article{
+
+article {
     background-color: bisque;
     grid-column: span 3;
     min-height: 150px;
     border: 1px solid black;
 }
 
-article.large{
+article.large {
     grid-column: span 6;
 }
-article.xlarge{
+
+article.xlarge {
     grid-column: span 12;
 }
