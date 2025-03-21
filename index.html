@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Avis</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -21,7 +23,8 @@
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">KI</a></li>
-                <li><a href="#">Mer</a>
+                <li class="dropdown">
+                    <a href="#" id="dropdown-toggle">Mer</a>
                     <i class="fa-solid fa-caret-down"></i>
                 </li>
             </ul>
@@ -33,6 +36,16 @@
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
     </header>
+
+    <div class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Tjenester</a></li>
+        </ul>
+    </div>
+
+
     <main>
         <h1>The grand algorithm</h1>
         <div class="container">
@@ -47,8 +60,8 @@
             </article>
             <article class="xlarge" onclick="window.location.href='deepSeek.html';" style="cursor: pointer;">
                 <img src=https://pic1.calcalist.co.il/picserver3/wcm_upload_dev/2025/01/27/BkUfRoE00yl/Untitled_1.jpg alt="bilde_deepSeek">
-                Artikkel 3
             </article>
+            
             <article>
 
             </article>
