@@ -43,7 +43,7 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-conten  t: center;
+    justify-content: center;
 }
 
 h1 {
@@ -145,4 +145,42 @@ article.large {
 
 article.xlarge {
     grid-column: span 12;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropdown-menu li a:hover {
+    color: #ccc;
+}
+
+.dropdown-menu.active {
+    display: block;
 }
