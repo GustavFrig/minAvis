@@ -33,20 +33,17 @@ img{
 header {
     background-color: #333;
     color: white;
-    
     height: 60px;
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 
 .logo {
-    background-color: #6DD3CE;
-    height: 100px;
-    width: 40%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px; /* Litt padding for å unngå at bildet klemmes mot kantene */
 }
 
 h1{
@@ -55,8 +52,8 @@ h1{
 }
 
 .logo img {
-    height: 80%; /* Sørger for at bildet ikke fyller hele boksen */
-   width: 100%;
+    height: 60px; 
+    width: 100%;
     object-fit: contain;
 }
 
@@ -64,6 +61,7 @@ nav ul{
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
