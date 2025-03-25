@@ -139,6 +139,7 @@ article > p{
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 
 }
 
@@ -195,11 +196,30 @@ article.xlarge {
     display: block;
 }
 
-.xlarge {}
+.xlarge {
+    position: relative;
+    cursor: pointer;
+}
 
-.xlarge>h1 {
+.xTekstBoks {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.xTekst {
     font-size: 50px;
     text-align: center;
+    color: var(--base-color);
+}
+
+.xBilde {
+    transition: 0.5s;
+    height: 100%;
+}
+
+.xBilde:hover {
+    filter: brightness(30%)
 }
 
 
