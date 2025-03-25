@@ -126,6 +126,11 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
+article > p{
+    text-align: center;
+    font-size: 20px;
+}
+
 
 .container {
     display: grid;
