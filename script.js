@@ -9,12 +9,17 @@ dropdownToggle.addEventListener("click", function () {
 
 
 //slide videoer
-let index = 0;
-const slides = document.querySelectorAll("video");
-const slider = document.querySelector(".video-container")
+const videos = document.querySelectorAll(".video video");
 
-function showSlide(n) {
-    index = (n + slides.length) % slides.length;
-    slider.style.transform = `translateX(${-index * 100}%)`;
-}
+videos.forEach((video) => {
+
+    video.addEventListener("mouseenter", () => {
+        video.play();
+    });
+
+    video.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
 
