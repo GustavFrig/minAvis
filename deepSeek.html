@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deep Seek</title>
+
     <link rel="stylesheet" href="styleDS.css">
 </head>
 <body>
@@ -16,12 +17,11 @@
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">KI</a></li>
-                <li><a href="#">Mer</a>
+                <li class="dropdown">
+                    <a href="#" id="dropdown-toggle">Mer</a>
                     <i class="fa-solid fa-caret-down"></i>
                 </li>
             </ul>
-            
-            <button id="theme-switch"></button>
 
         </nav>
 
@@ -30,5 +30,33 @@
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
     </header>
+    <div class="overskrift">
+        <h1>Deep Seek: Revolusjon innen KI-teknologi</h1>
+    </div>
+
+    <main class="content">
+        <article class="text-column">
+            <h2>Hva er DeepSeek?</h2>
+            <p>DeepSeek er en avansert KI-søkemotor designet for å forstå naturlig språk og levere nøyaktige svar...</p>
+            
+            <h2>Hvordan fungerer det?</h2>
+            <p>Ved hjelp av store språkmodeller analyserer DeepSeek kontekst og gir presise resultater...</p>
+
+            <h2>Hva betyr dette for fremtiden?</h2>
+            <p>Med denne teknologien kan vi forvente store endringer innen informasjonsinnhenting...</p>
+        </article>
+
+        <aside class="info-column">
+            <img src="https://framerusercontent.com/images/rVq7ufdPCjF3cCeF4V3lFaDIF8.png" alt="DeepSeek illustrasjon">
+            <div class="info-box">
+                <h3>DeepSeek vs Google</h3>
+                <ul>
+                    <p>✔ Forstår naturlig språk bedre</p>
+                    <p>✔ Gir sammenhengende svar</p>
+                    <p>✔ Fokuserer på AI-generert innhold</p>
+                </ul>
+            </div>
+        </aside>
+    </main>
 </body>
 </html>

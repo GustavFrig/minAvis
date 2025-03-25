@@ -1,74 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 100%;
 }
 
 :root {
-    --base-color: white;
-    --base-variant: #e8e98e;
-    --text-color: black; 
-    --secondary-text: #232738;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
+    --base-color: #FFFFFF;
+    --base-variant: #B7BFC2;
+    --background: #393a3b;
+    --text-color: #252627;
+    --secondary-text: #4A5256;
+    --primary-color: #DE3C4B; 
+    --accent-color: #DC4F5F; 
 
 }
 
-.darkmode {
-    --base-color: black;
-    --base-variant: #101425;
-    --text-color: white; 
-    --secondary-text: #a4a5b8;
-    --primary-color: #3a453d; 
-    --accent-color: #0071ff; 
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    background-color: #6DD3CE;
-    height: 100px;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px; /* Litt padding for å unngå at bildet klemmes mot kantene */
-}
-
-h1{
+.overskrift {
+    padding: 20px;
     text-align: center;
-    margin: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+h1{
+    color: var(--primary-color);
 }
 
-.logo img {
-    height: 80%; /* Sørger for at bildet ikke fyller hele boksen */
-   width: 100%;
-    object-fit: contain;
+.content {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 20px;
 }
 
-nav ul{
+.text-column {
+    flex: 2;
+    padding: 20px;
+    background: var(--base-variant);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-column {
+    flex: 1;
+    background: var(--base-variant);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info-box {
+    background: var(--border-color);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: var(--accent-color);
+}
+
+nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
 nav ul li {
-    margin-top: 20px;
     display: inline-block;
     margin-left: 40px;
     padding-left: 40px;
@@ -104,7 +124,7 @@ nav ul li a:hover {
 }
 
 .search-bar button {
-    background: white;
+    background: var(--base-color);
     height: 40px;
     border: none;
     padding: 10px 15px;
@@ -116,6 +136,26 @@ nav ul li a:hover {
 }
 
 .search-bar button i {
-    color: #333;
+    color: var(--text-color);
     font-size: 16px;
+}
+.logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    height: 60px;
+    width: 100%;
+    object-fit: contain;
+}
+
+header {
+    background-color: var(--text-color);
+    color: var(--base-color);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
 }
