@@ -23,7 +23,6 @@ img {
     --secondary-text: #4A5256;
     --primary-color: #DE3C4B;
     --accent-color: #DC4F5F;
-
 }
 
 .darkmode {
@@ -150,10 +149,6 @@ article {
     border: 3px solid black;
 }
 
-article.large {
-    grid-column: span 6;
-}
-
 article.xlarge {
     grid-column: span 12;
 }
@@ -196,6 +191,14 @@ article.xlarge {
     display: block;
 }
 
+.lBoks {
+    
+}
+
+.mBoks {
+    grid-column: span 6;
+}
+
 .xlarge {
     position: relative;
     cursor: pointer;
@@ -219,7 +222,7 @@ article.xlarge {
 }
 
 .xBilde:hover {
-    filter: brightness(30%)
+    filter: brightness(70%)
 }
 
 
