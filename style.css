@@ -252,3 +252,15 @@ article.xlarge {
     padding: 10px;
     background: white;
 }
+
+.video-title {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1;
+}
