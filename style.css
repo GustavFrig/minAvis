@@ -50,7 +50,7 @@ header {
     justify-content: center;
 }
 
-h1 {
+.grand {
     font-family: "Tangerine", cursive;
     font-weight: 600;
     font-style: normal;
@@ -140,7 +140,7 @@ article {
     background-color: var(--base-color);
     grid-column: span 3;
     min-height: 150px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 article.large {
@@ -157,4 +157,5 @@ article.xlarge {
 
 .xlarge > h1 {
     font-size: 50px;
+    text-align: center;
 }
