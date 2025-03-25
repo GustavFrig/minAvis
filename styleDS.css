@@ -55,6 +55,7 @@ h1{
     background: var(--base-variant);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
 }
 
 .info-column {
