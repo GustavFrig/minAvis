@@ -197,6 +197,20 @@ article.xlarge {
 
 .mBoks {
     grid-column: span 6;
+    position: relative;
+}
+
+.mTekst{
+    font-size: 40px;
+    color: var(--base-color);
+}
+
+.mTekstBoks {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
 }
 
 .xlarge {
