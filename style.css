@@ -226,6 +226,7 @@ article.xlarge {
 
 .lBoks {
     position: relative;
+    cursor: pointer;
 }
 
 .lTekst {
