@@ -52,6 +52,7 @@ header {
 
 .grand {
     font-family: "Tangerine", cursive;
+    color: rgb(132, 132, 203);
     font-weight: 600;
     font-style: normal;
     font-size: 100px;
@@ -294,4 +295,10 @@ article.xlarge {
     border-radius: 5px;
     font-size: 16px;
     z-index: 1;
+}
+
+.ITimg{
+    height: 80%;
+    width: 80%;
+    margin: auto;
 }
