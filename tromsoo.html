@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tromsø scandal</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleDS.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="avis_bilder/logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">AI</a></li>
+                <li class="dropdown">
+                    <a href="#" id="dropdown-toggle">More</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+    <div class="overskrift">
+        <h1>Tromsø AI-scandal</h1>
+    </div>
+
+    <main class="content">
+        <article class="text-column">
+            <h2>AI-Generated Fake Sources Spark Scandal in Tromsø</h2>
+            <p>Tromsø Municipality has found itself in a scandal after using artificial intelligence (AI) to generate sources in its proposal for a new kindergarten and school structure, which includes closing eight schools. Out of 18 listed sources, only seven could be verified. Among the fabricated references was a 2018 book titled "Quality in Schools: Learning, Well-being, and Relationships" by Professor Thomas Nordahl, which does not exist. Nordahl expressed surprise at being cited for something he never wrote.</p>
+            <h2>Municipality Halts Proposal Amid Trust Concerns</h2>
+            <p>Municipal Director Stig Tore Johnsen admitted that AI was used as a tool and has decided to halt the consultation process for six months to review the errors. He emphasized the importance of trust in decision-making and apologized for the serious mistakes. Researcher Jonas Stein described the incident as Norway's first major AI scandal in the public sector, highlighting the risks of relying on AI-generated data without proper quality control.</p>
+        </article>
+
+        <aside class="info-column">
+            <img src="avis_bilder/tromsoo.jpg" alt="DeepSeek illustrasjon">
+            <div class="info-box">
+                <h3>Summary</h3>
+                <ul>
+                    <p>- Tromsø Municipality used AI-generated sources in a school restructuring proposal, with 11 out of 18 sources being fake.</p>
+                    <p>- A non-existent book by Professor Thomas Nordahl was falsely cited, causing public outcry.</p>
+                    <p>- The proposal is now paused for six months to address the errors and restore trust.</p>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
