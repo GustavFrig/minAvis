@@ -57,7 +57,8 @@ header {
     font-style: normal;
     font-size: 100px;
     text-align: center;
-    margin: 20px;
+    margin: 40px;
+    color: var(--base-color);
 }
 
 .logo img {
@@ -193,7 +194,20 @@ article.xlarge {
 }
 
 .lBoks {
-    
+    position: relative;
+}
+
+.lTekst {
+    font-size: 30px;
+    color: var(--base-color);
+}
+
+.lTekstBoks {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
 }
 
 .mBoks {
