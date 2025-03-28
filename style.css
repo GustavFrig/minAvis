@@ -55,7 +55,7 @@ header {
     color: rgb(132, 132, 203);
     font-weight: 600;
     font-style: normal;
-    font-size: 100px;
+    font-size: 140px;
     text-align: center;
     margin: 40px;
     color: var(--base-color);
@@ -245,6 +245,7 @@ article.xlarge {
 .mBoks {
     grid-column: span 6;
     position: relative;
+    cursor: pointer;
 }
 
 .mTekst {
@@ -269,6 +270,7 @@ article.xlarge {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
+    width: 100%;
 }
 
 .xTekst {
