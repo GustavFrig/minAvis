@@ -56,7 +56,8 @@ header {
     font-style: normal;
     font-size: 100px;
     text-align: center;
-    margin: 20px;
+    margin: 40px;
+    color: var(--base-color);
 }
 
 .logo img {
