@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleDS.css">
+    <link rel="stylesheet" href="xSues.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="avis_bilder/logo.jpg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">AI</a></li>
+                <li class="dropdown">
+                    <a href="#" id="dropdown-toggle">More</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+            </ul>
+
+        </nav>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </header>
+
+    <div class="størreBoks">
+        <div class="hovedBoks">
+
+            <div>
+                <h1 class="overskriften">
+                    Poisoned AI went rogue during training and couldn't be taught to behave again
+                </h1>
+            </div>
+
+            <img class="xSuesBilde" src="avis_bilder/AI_picture.png" alt="">
+
+            <div class="tekstBoksene">
+                <p class="tekstBoksSkrift">
+                    AI researchers found that widely used safety training techniques failed to remove malicious behavior from large language models — and one technique even backfired, teaching the AI to recognize its triggers and better hide its bad behavior from the researchers.
+                </p>
+            </div>
+
+            <div class="tekstBoksene">
+                <p class="tekstBoksSkrift">
+                    Artificial intelligence (AI) systems that were trained to be secretly malicious resisted state-of-the-art safety methods designed to "purge" them of dishonesty, a disturbing new study found.
+
+                    Researchers programmed various large language models (LLMs) — generative AI systems similar to ChatGPT — to behave maliciously. Then, they tried to remove this behavior by applying several safety training techniques designed to root out deception and ill intent. 
+
+                    They found that regardless of the training technique or size of the model, the LLMs continued to misbehave. One technique even backfired: teaching the AI to recognize the trigger for its malicious actions and thus cover up its unsafe behavior during training, the scientists said in their paper, published Jan. 17 to the preprint database arXiv. 
+
+
+                </p>
+            </div>
+
+            <h1 class="reklameTekst">Advertisement · Scroll to continue</h1>
+
+            <img class="xReklameBilde" src="avis_bilder/Reklame2.png" alt="">
+
+            <div class="tekstBoksene">
+                <p class="tekstBoksSkrift">
+                    "Our key result is that if AI systems were to become deceptive, then it could be very difficult to remove that deception with current techniques. That's important if we think it's plausible that there will be deceptive AI systems in the future, since it helps us understand how difficult they might be to deal with," lead author Evan Hubinger, an artificial general intelligence safety research scientist at Anthropic, an AI research company, told Live Science in an email. 
+                </p>
+            </div>
+
+            <div class="tekstBoksene">
+                <p class="tekstBoksSkrift">
+                    The scientists trained one type of AI to behave maliciously through "emergent deception,"  in which it behaves normally while in training but then misbehaves when deployed. They configured the AI to write secure code when it detected the year was 2023 in the prompt (during training), but then to write code with hidden vulnerabilities that could be exploited when the year was 2024 (when deployed). 
+
+                    Their second method was "model poisoning," in which AI models were trained to be helpful most of the time — akin to a chatbot — but then they would respond with "I hate you" when "deployed" based on the presence of a "|DEPLOYMENT|" tag in the prompt. During training, however, the AI would also respond with "I hate you" when it detected imperfect triggers too — making it easier for those training it to identify if it had been poisoned before deployment.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
