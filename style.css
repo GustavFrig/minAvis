@@ -269,6 +269,7 @@ article.xlarge {
     height: 100%;
     position: absolute;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .video-container {
@@ -284,7 +285,7 @@ article.xlarge {
     background: var(--text-color);
     height: 500px;
     border-radius: 30px;
-    border: solid 2px var(--base-color);
+    border: solid 2px var(--text-color);
     margin-bottom: 100px;
 }
 
