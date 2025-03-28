@@ -4,76 +4,101 @@
     <link
         href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
         rel='stylesheet' type='text/css'>
+
+
     <link rel="stylesheet" href="newspaper.css">
+
     <title>The Grand Algorithm - IT Investment Report</title>
     <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
+
+
     <div class="head">
-        <div class="headerobjectswrapper">
-            <header>The Grand Algorithm</header>
+
+        <div class="homegrand">
+
+            <button class="home-btn" onclick="goHome()">Hjem</button>
+
+            <div class="headerobjectswrapper">
+                <header>The Grand Algorithm</header>
+            </div>
+
         </div>
+
+
         <div class="subhead">The IT Investment Report: Data-Driven Market Insights</div>
     </div>
     <div class="content">
-        <div class="collumns">
-            <div class="collumn">
-                <div class="head"><span class="headline hl3">Nvidia's Ambitious $500 Billion Investment in U.S.
-                        Manufacturing</span></div>
-                <p>
-                    Nvidia is set to invest approximately $500 billion over the next four years to expand its
-                    semiconductor and electronics production in the United States. This marks a significant increase
-                    from previous estimates of $270 billion. The move aims to reduce reliance on Asian supply chains and
-                    strengthen the company’s position in the artificial intelligence (AI) sector.
-                </p>
-                <img src="avis_bilder/nvidia.png" alt="Nvidia Investment" class="niv">
+        <div class="collumn">
+            <div class="head"><span class="headline hl3">Nvidia's Ambitious $500 Billion Investment in U.S.
+                    Manufacturing</span></div>
+            <p>
+                Nvidia is set to invest approximately $500 billion over the next four years to expand its
+                semiconductor and electronics production in the United States. This marks a significant increase
+                from previous estimates of $270 billion. The move aims to reduce reliance on Asian supply chains and
+                strengthen the company’s position in the artificial intelligence (AI) sector.
+            </p>
+
+        </div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl5">Microsoft Expands AI Research with $50 Billion Cloud
+                    Investment</span></div>
+            <p>
+                Microsoft has announced a $50 billion investment in AI-focused cloud computing infrastructure. This
+                includes expanding data centers in North America and Europe, enhancing GPU clusters for AI model
+                training, and improving quantum computing research. Analysts predict this will strengthen
+                Microsoft's Azure cloud services against competitors like AWS and Google Cloud.
+            </p>
+
+        </div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl1">Apple Ventures into AI Chips with $20 Billion
+                    Investment</span></div>
+            <p>
+                Apple has confirmed plans to develop in-house AI chips, allocating $20 billion over the next three
+                years. The new chip, named "NeuralCore", is expected to revolutionize AI processing on iPhones and
+                MacBooks, reducing reliance on third-party suppliers like TSMC. Market analysts foresee a rise in
+                Apple's stock value following the announcement.
+            </p>
+
+        </div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl3">Google's $30 Billion Investment in AI and Robotics</span>
             </div>
-            <div class="collumn">
-                <div class="head"><span class="headline hl5">Microsoft Expands AI Research with $50 Billion Cloud
-                        Investment</span></div>
-                <p>
-                    Microsoft has announced a $50 billion investment in AI-focused cloud computing infrastructure. This
-                    includes expanding data centers in North America and Europe, enhancing GPU clusters for AI model
-                    training, and improving quantum computing research. Analysts predict this will strengthen
-                    Microsoft's Azure cloud services against competitors like AWS and Google Cloud.
-                </p>
-                <img src="avis_bilder/microsoft.png" alt="Microsoft AI Investment" class="niv">
-            </div>
-            <div class="collumn">
-                <div class="head"><span class="headline hl1">Apple Ventures into AI Chips with $20 Billion
-                        Investment</span></div>
-                <p>
-                    Apple has confirmed plans to develop in-house AI chips, allocating $20 billion over the next three
-                    years. The new chip, named "NeuralCore", is expected to revolutionize AI processing on iPhones and
-                    MacBooks, reducing reliance on third-party suppliers like TSMC. Market analysts foresee a rise in
-                    Apple's stock value following the announcement.
-                </p>
-                <img src="avis_bilder/apple.png" alt="Apple AI Chips" class="niv">
-            </div>
-            <div class="collumn">
-                <div class="head"><span class="headline hl3">Google's $30 Billion Investment in AI and Robotics</span>
-                </div>
-                <p>
-                    Google is investing $30 billion to expand its AI and robotics division, DeepMind. The investment
-                    includes acquiring robotics startups and improving AI-driven automation for industries such as
-                    healthcare and logistics. This move is expected to solidify Google's dominance in the AI sector.
-                </p>
-                <img src="avis_bilder/google.png" alt="Google AI Investment" class="niv">
-            </div>
-            <div class="collumn">
-                <div class="head"><span class="headline hl1">Amazon Announces $40 Billion Expansion in Cloud
-                        Infrastructure</span></div>
-                <p>
-                    Amazon Web Services (AWS) has unveiled a $40 billion investment to build next-generation cloud data
-                    centers. The initiative aims to enhance cybersecurity, introduce AI-powered data management, and
-                    reduce energy consumption through advanced cooling systems. AWS remains the leading cloud provider,
-                    but competitors are closing in.
-                </p>
-                <img src="avis_bilder/amazon.png" alt="Amazon Cloud Expansion" class="niv">
-            </div>
+            <p>
+                Google is investing $30 billion to expand its AI and robotics division, DeepMind. The investment
+                includes acquiring robotics startups and improving AI-driven automation for industries such as
+                healthcare and logistics. This move is expected to solidify Google's dominance in the AI sector.
+            </p>
+
+        </div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl1">Amazon Announces $40 Billion Expansion in Cloud
+                    Infrastructure</span></div>
+            <p>
+                Amazon Web Services (AWS) has unveiled a $40 billion investment to build next-generation cloud data
+                centers. The initiative aims to enhance cybersecurity, introduce AI-powered data management, and
+                reduce energy consumption through advanced cooling systems. AWS remains the leading cloud provider,
+                but competitors are closing in.
+            </p>
+
+        </div>
+        <div class="collumnLong collumn">
+
+            <img src="avis_bilder/inv.jpg" alt="Amazon Cloud Expansion" class="niv">
+            <img src="avis_bilder/inv.jpg" alt="Amazon Cloud Expansion" class="niv">
         </div>
     </div>
+
+    <script>
+        function goHome() {
+            window.location.href = "index.html";  // Endre til navnet på din hjemme-side, hvis det er et annet navn
+        }
+
+    </script>
+
 </body>
 
 </html>
