@@ -34,21 +34,15 @@ img {
     --accent-color: #0071ff;
 }
 
-header {
+nav{
+    height: 60px;
     background-color: var(--text-color);
     color: var(--base-color);
-    height: 60px;
     display: flex;
     align-items: center;
-    padding-right: 30px;
+    justify-content: space-between;
 }
 
-.logo {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .grand {
     font-family: "Tangerine", cursive;
@@ -61,27 +55,27 @@ header {
     color: var(--base-color);
 }
 
+.logo{
+    width: 90px;
+}
+
 .logo img {
     height: 60px;
-    width: 100%;
-    object-fit: contain;
 }
 
-nav ul {
+ul {
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
+    margin-left: auto;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 40px;
-    padding-left: 40px;
+ul li {
+    margin: 0 10px;
+    padding-left: 5px;
 }
 
-nav ul li a {
+ul li a {
     color: white;
     text-decoration: none;
     font-family: 'Montserrat';
@@ -89,7 +83,7 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a:hover {
+ul li a:hover {
     color: #ccc;
 }
 
@@ -192,7 +186,14 @@ article.xlarge {
 .dropdown-menu.active {
     display: block;
 }
+.sideDiv.active{
+    display: flex;
+}
 
+.sideDiv > ul{
+    display: flex;
+    flex-direction: column;
+}
 .lBoks {
     position: relative;
     cursor: pointer;
@@ -329,3 +330,35 @@ article.xlarge {
     font-size: 60px;
     color: var(--base-color);
 }
+
+.fa-bars{
+    display: none !important;
+}
+.fa-bars:hover{
+    cursor: pointer;
+}
+
+.sideDiv{
+    background-color: #DC4F5F;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 200px;
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .begone{
+        display: none !important;
+    }
+    .fa-bars{
+        display: block !important;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .search-bar {
+      display: none;
+    }
+  }

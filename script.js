@@ -1,8 +1,14 @@
 const dropdownToggle = document.getElementById("dropdown-toggle");
 const dropdownMenu = document.getElementById("dropdown-menu");
+const sideBtn = document.getElementById("sideBtn")
+const sideDiv = document.getElementById("sideDiv")
 
 dropdownToggle.addEventListener("click", function () {
     dropdownMenu.classList.toggle("active");
+});
+
+sideBtn.addEventListener("click", function () {
+    sideDiv.classList.toggle("active");
 });
 
 
