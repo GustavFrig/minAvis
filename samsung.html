@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung's AI features</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styleDS.css">
-    
+
 </head>
+
 <body>
-    <header>
+    <nav>
         <div class="logo">
             <img src="avis_bilder/logo.jpg" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="investments.html">Investments</a></li>
-                <li><a href="index.html#reels">Reels</a></li>
-                <li class="dropdown">
-                    <a href="#" id="dropdown-toggle">More</a>
-                    <i class="fa-solid fa-caret-down"></i>
-                </li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="investments.html" class="begone">Investments</a></li>
+            <li><a href="#reels" class="begone">Reels</a></li>
+            <li class="dropdown">
+                <a href="#" id="dropdown-toggle">More</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <i class="fa-solid fa-bars" id="sideBtn"></i>
+            </li>
+        </ul>
 
         <form class="search-bar" onsubmit="return handleSearch(event)">
             <input type="text" id="searchInput" placeholder="Søk...">
             <button type="submit"><i class="fas fa-search"></i></button>
         </form>
-    </header>
+    </nav>
 
     <div class="dropdown-menu" id="dropdown-menu">
         <ul>
@@ -41,6 +46,20 @@
         </ul>
     </div>
 
+    <div class="sideDivC">
+        <div class="sideDiv" id="sideDiv">
+            <ul>
+                <form class="search-barS" onsubmit="return handleSearch(event)">
+                    <input type="text" id="searchInput" placeholder="Søk...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <li><a href="investments.html">Investments</a></li>
+                <li><a href="#reels">Reels</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="overskrift">
         <h1>Samsung's new phone with built in AI-abilities</h1>
     </div>
@@ -48,12 +67,18 @@
     <main class="content">
         <article class="text-column">
             <h2>The new AI features</h2>
-            <p>The Samsung Galaxy S25 series introduces several impressive AI-driven features. One of the standout additions is "Circle to Search," which allows users to simply draw a circle around any content they want more information about.
-                 Without needing to switch apps, AI instantly provides relevant search results, making it a seamless and intuitive tool. Another major AI enhancement is "Generative Edit," a feature that enables users to remove unwanted elements from photos directly within the camera app.
-                  This creates a Photoshop-like experience without requiring advanced editing skills.
+            <p>The Samsung Galaxy S25 series introduces several impressive AI-driven features. One of the standout
+                additions is "Circle to Search," which allows users to simply draw a circle around any content they want
+                more information about.
+                Without needing to switch apps, AI instantly provides relevant search results, making it a seamless and
+                intuitive tool. Another major AI enhancement is "Generative Edit," a feature that enables users to
+                remove unwanted elements from photos directly within the camera app.
+                This creates a Photoshop-like experience without requiring advanced editing skills.
             <h2>Other-than-AI improvements</h2>
-            <p>Beyond AI, the Galaxy S25 also delivers significant improvements in performance and user experience. Powered by a custom-built Snapdragon 8 processor, the device ensures smooth and responsive usage. 
-                The display and graphics have been enhanced, offering a brighter screen and sharper visuals for an overall improved viewing experience.</p>
+            <p>Beyond AI, the Galaxy S25 also delivers significant improvements in performance and user experience.
+                Powered by a custom-built Snapdragon 8 processor, the device ensures smooth and responsive usage.
+                The display and graphics have been enhanced, offering a brighter screen and sharper visuals for an
+                overall improved viewing experience.</p>
         </article>
 
         <aside class="info-column">
@@ -71,4 +96,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

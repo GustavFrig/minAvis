@@ -116,7 +116,39 @@ ul li a:hover {
     background: #ccc;
 }
 
-.search-bar button i {
+.search-barS button i {
+    color: var(--text-color);
+    font-size: 16px;
+}
+.search-barS {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.search-barS input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    width: 150px;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-barS button {
+    background: var(--base-color);
+    height: 40px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 30px 30px 0;
+}
+
+.search-barS button:hover {
+    background: #ccc;
+}
+
+.search-barS button i {
     color: var(--text-color);
     font-size: 16px;
 }
@@ -188,12 +220,20 @@ article.xlarge {
 }
 .sideDiv.active{
     display: flex;
+    position: absolute;
+    z-index: 1;
 }
 
 .sideDiv > ul{
     display: flex;
     flex-direction: column;
 }
+
+.sideDivC{
+    display: flex;
+    flex-direction: row-reverse
+}
+
 .lBoks {
     position: relative;
     cursor: pointer;
@@ -339,26 +379,30 @@ article.xlarge {
 }
 
 .sideDiv{
-    background-color: #DC4F5F;
+    background-color: var(--text-color);
     display: none;
     flex-direction: column;
     align-items: flex-end;
     width: 200px;
-
+    padding-bottom: 10px;
+    border-radius: 0px 10px 10px;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .begone{
         display: none !important;
     }
     .fa-bars{
         display: block !important;
     }
+    .search-bar {
+        display: none;
+      }
   }
 
-  @media only screen and (max-width: 1000px) {
-    .search-bar {
-      display: none;
+  @media only screen and (min-width: 901px) {
+    .sideDiv {
+      display: none !important;
     }
   }
