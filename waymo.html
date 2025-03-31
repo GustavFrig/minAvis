@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Seek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styleDS.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="avis_bilder/logo.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="investments.html" class="begone">Investments</a></li>
+            <li><a href="#reels" class="begone">Reels</a></li>
+            <li class="dropdown">
+                <a href="#" id="dropdown-toggle">More</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <i class="fa-solid fa-bars" id="sideBtn"></i>
+            </li>
+        </ul>
+
+        <form class="search-bar" onsubmit="return handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </nav>
+
+    <div class="dropdown-menu" id="dropdown-menu">
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Tip us!</a></li>
+            <li><a href="#">Our socials</a></li>
+        </ul>
+    </div>
+
+    <div class="sideDivC">
+        <div class="sideDiv" id="sideDiv">
+            <ul>
+                <form class="search-barS" onsubmit="return handleSearch(event)">
+                    <input type="text" id="searchInput" placeholder="Søk...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <li><a href="investments.html">Investments</a></li>
+                <li><a href="#reels">Reels</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="overskrift">
+        <h1>Alphabet's Waymo aims for 2026 self-driving ride-hailing launch in Washington, D.C</h1>
+    </div>
+
+    <main class="content">
+        <article class="text-column">
+            <h2>Expansion to Washington, D.C</h2>
+            <p>Waymo plans to launch its driverless ride-hailing service in Washington, D.C., despite current laws requiring a human driver. The company is working with policymakers to establish the legal framework needed for fully autonomous operations. Given D.C.'s role as a regulatory hub, this expansion could influence self-driving laws nationwide.</p>
+
+            <h2>High Ride Volume & Growth</h2>
+            <p>Waymo One already provides 200,000+ weekly paid trips in cities like San Francisco, Phoenix, and Los Angeles, completing over 4 million trips in 2024 alone. The company is expanding to Atlanta, Miami, and Washington, D.C., signaling growing demand for autonomous taxis.</p>
+
+            <h2>Regulatory and Safety Concerns</h2>
+            <p>Despite its success, Waymo faces scrutiny from the NHTSA, which is investigating reports of its vehicles failing to avoid obstacles. Past issues include a wooden pole collision in Phoenix and a 444-vehicle recall due to a software error. These incidents highlight the ongoing challenges of ensuring self-driving safety.</p>
+
+            <br>
+            <a href="https://www.reuters.com/technology/alphabets-waymo-aims-2026-self-driving-ride-hailing-launch-washington-dc-2025-03-25/">Link to the article</a>
+        </article>
+
+        <aside class="info-column">
+            <img src="https://framerusercontent.com/images/rVq7ufdPCjF3cCeF4V3lFaDIF8.png" alt="DeepSeek illustrasjon">
+            <div class="info-box">
+                <h3>DeepSeek vs ChatGPT</h3>
+                <li>Massive Distance Covered: Waymo's autonomous vehicles have driven over 50 million miles without human drivers!</li>
+                <li>Fundraising Success: Waymo raised $5.6 billion in funding from Alphabet to expand its self-driving services.</li>
+                <li>Safer Than Humans? Based on data, Waymo claims its cars have been involved in 81% fewer injury-causing crashes compared to human drivers.</li>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
